@@ -84,14 +84,14 @@ python main.py
 5) Find the generated SVG files in the folder next to your original 3D file.
 
 ## Example Output Structure
-
+```bash
 MyModel.stl
 └── MyModel_3dSliced/
     ├── MyModel_slice001.svg
     ├── MyModel_slice002.svg    
     ├── MyModel_slice003.svg    
     └── ...
-
+```
 
 ## Tips
 
