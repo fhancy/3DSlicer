@@ -30,11 +30,39 @@ Perfect for laser cutting, CNC, paper models, or any workflow that needs sequent
 - Python 3.8 or higher
 - Windows / macOS / Linux
 
-### Python packages
+---
+
+## Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/3DSlicer.git
+cd 3DSlicer
+```
+
+### 2. Create a virtual environment (recommended)
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+```
+
+### 3. Install the required packages
 
 ```bash
-pip install trimesh numpy scipy svgwrite shapely
+pip install -r requirements.txt
 ```
+requirements.txt:
+
+trimesh>=4.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+svgwrite>=1.4.3
+shapely>=2.0.0
 
 ## How to Use
 
@@ -60,9 +88,10 @@ python main.py
 MyModel.stl
 └── MyModel_3dSliced/
     ├── MyModel_slice001.svg
-    ├── MyModel_slice002.svg
-    ├── MyModel_slice003.svg
+    ├── MyModel_slice002.svg    
+    ├── MyModel_slice003.svg    
     └── ...
+
 
 ## Tips
 
@@ -77,5 +106,7 @@ Very large / high-poly meshes can be slow.
 Currently only exports SVG (DXF support can be added later).
 Visualization of the 3D model is not yet available in the stable version.
 
+## License
 
+MIT License – feel free to use, modify and distribute.
     
